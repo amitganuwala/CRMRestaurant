@@ -1,0 +1,128 @@
+﻿@model RestaurantDashboard.Models.Product.ProductModel
+@{
+    ViewData["Title"] = "CreateProduct";
+    Layout = "~/Views/Shared/_Main_Layout.cshtml";
+}
+
+@*<input asp-for="Id" type="hidden" />*@
+<div class="row">
+
+    <div class="col-md-12">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="~/Dashboard/Index">Dashboard</a>
+            </li>
+            <li class="breadcrumb-item active"><a href="~/Product/ListProduct">Product List</a></li>
+            <li class="breadcrumb-item active">Add Product</li>
+
+        </ol>
+    </div>
+
+</div>
+
+<form asp-action="CreateProduct" ,new { enctype="multipart/form-data" }>
+
+    @if (ViewData.ModelState.Any(x => x.Value.Errors.Any()))
+    {
+        // Bootstrap 2 = "alert-error", Bootstrap 3 and 4 = "alert-danger"
+        <div asp-validation-summary="All" class="alert alert-danger alert-error">
+            <a class="close" data-dismiss="alert">&times;</a>
+        </div>
+    }
+
+
+    <div class="container-fluid my-3">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row div_right">
+                        <button type="submit" name="save" class="btn btn-primary btn-sm pull-right">
+                            <i class="icon-save mr-2"></i>
+                            Save
+                        </button>
+                        <button type="submit" name="save-continue" class="btn btn-primary btn-sm pull-right ml-2 margin-right5">
+                            <i class="icon-save mr-2"></i>
+                            Save And Countinue
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-1">
+            <div class="col-md-12">
+                <div class="card bg-white mb-3 font-weight-bold">
+                    <div class="card-header text-primary">Add Product</div>
+                    <div class="card-body">
+                        <div class="card-title"></div>
+
+                        <!--Add Product Details -->
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+
+                                            <label>Product Type</label>
+                                            <select class="select2" asp-for="ProductTypeInfo.Id" asp-items="Model.AvailableProductType"></select>
+                                            @*<select class="form-control s-12" name="Menu_Name" id="Menu_Name"></select>*@
+
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Product Name</label>
+                                            <input asp-for="ProductName" class="form-control s-12" type="text" id="ProductName" name="ProductName" value="">
+
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Product Cost</label>
+                                            <input asp-for="ProductCost" class="form-control s-12" type="text" id="ProductCost" name="ProductCost" value="">
+
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Item Type</label>
+                                            <select asp-for="ProductType" class="form-control s-12" name="ProductType" id="ProductType">
+                                                <option value="Veg">Veg</option>
+                                                <option value="Non Veg">Non Veg</option>
+                                                <option value="Other">Other</option>
+                                            </select>
+
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Addons</label>
+                                            <select class="select2" asp-for="AddonInfo.Id" asp-items="Model.AvailableAddon"></select>
+                                            @*<select class="form-control s-12" name="Addons" id="Addons"></select>*@
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Description</label>
+                                            <textarea asp-for="Description" name="Description" id="Description" class="form-control s-12"></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Product Image</label>
+                                            <input type="file" name="ProductImage" id="ProductImage" class="form-control s-12" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Status</label>
+                                            <select asp-for="Status" class="form-control s-12" name="Status" id="Status">
+                                                <option value="Active">Active</option>
+                                                <option value="Inactive">Inactive</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</form>
+

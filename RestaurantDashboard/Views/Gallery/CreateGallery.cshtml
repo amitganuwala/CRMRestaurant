@@ -1,0 +1,94 @@
+﻿@model RestaurantDashboard.Models.Gallery.GalleryModel
+@{
+    ViewData["Title"] = "CreateGallery";
+    Layout = "~/Views/Shared/_Main_Layout.cshtml";
+}
+
+<div class="row">
+
+    <div class="col-md-12">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="~/Dashboard/Index">Dashboard</a>
+            </li>
+            <li class="breadcrumb-item active"><a href="~/Gallery/GalleryList">Gallery List</a></li>
+            <li class="breadcrumb-item active">Add Gallery</li>
+
+        </ol>
+    </div>
+
+</div>
+
+<form asp-action="CreateGallery" ,new { enctype="multipart/form-data" }>
+
+    @if (ViewData.ModelState.Any(x => x.Value.Errors.Any()))
+    {
+        // Bootstrap 2 = "alert-error", Bootstrap 3 and 4 = "alert-danger"
+        <div asp-validation-summary="All" class="alert alert-danger alert-error">
+            <a class="close" data-dismiss="alert">&times;</a>
+        </div>
+    }
+
+
+    <div class="container-fluid my-3">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row div_right">
+                        <button type="submit" name="save" class="btn btn-primary btn-sm pull-right">
+                            <i class="icon-save mr-2"></i>
+                            Save
+                        </button>
+                        <button type="submit" name="save-continue" class="btn btn-primary btn-sm pull-right ml-2 margin-right5">
+                            <i class="icon-save mr-2"></i>
+                            Save And Countinue
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-1">
+            <div class="col-md-12">
+                <div class="card bg-white mb-3 font-weight-bold">
+                    <div class="card-header text-primary">Add Gallery</div>
+                    <div class="card-body">
+                        <div class="card-title"></div>
+
+                        <!--Add Gallery Details -->
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Gallery Image</label>
+                                            <input type="file" name="GalleryImage" id="GalleryImage" class="form-control s-12" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Image Name</label>
+                                            <input asp-for="AltText" class="form-control s-12" type="text" id="AltText" name="AltText" value="">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Status</label>
+                                            <select asp-for="Status" class="form-control s-12" name="Status" id="Status">
+                                                <option value="Active">Active</option>
+                                                <option value="Inactive">Inactive</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</form>
+
+

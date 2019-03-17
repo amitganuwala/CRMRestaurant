@@ -1,0 +1,105 @@
+﻿@model RestaurantDashboard.Models.ProductType.ProductTypeModel
+@{
+    ViewData["Title"] = "CreateProductType";
+    Layout = "~/Views/Shared/_Main_Layout.cshtml";
+}
+
+
+<input asp-for="Id" type="hidden" />
+<div class="row">
+
+    <div class="col-md-12">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="~/Dashboard/Index">Dashboard</a>
+            </li>
+            <li class="breadcrumb-item active"><a href="~/ProductType/ListProductType">ProductType List</a></li>
+            <li class="breadcrumb-item active">Add ProductType</li>
+
+        </ol>
+    </div>
+
+</div>
+
+<form asp-action="CreateProductType" ,new { enctype="multipart/form-data" }>
+
+    @if (ViewData.ModelState.Any(x => x.Value.Errors.Any()))
+    {
+        // Bootstrap 2 = "alert-error", Bootstrap 3 and 4 = "alert-danger"
+        <div asp-validation-summary="All" class="alert alert-danger alert-error">
+            <a class="close" data-dismiss="alert">&times;</a>
+        </div>
+    }
+
+
+    <div class="container-fluid my-3">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row div_right">
+                        <button type="submit" name="save" class="btn btn-primary btn-sm pull-right">
+                            <i class="icon-save mr-2"></i>
+                            Save
+                        </button>
+                        <button type="submit" name="save-continue" class="btn btn-primary btn-sm pull-right ml-2 margin-right5">
+                            <i class="icon-save mr-2"></i>
+                            Save And Countinue
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-1">
+            <div class="col-md-12">
+                <div class="card bg-white mb-3 font-weight-bold">
+                    <div class="card-header text-primary">Add Product Type</div>
+                    <div class="card-body">
+                        <div class="card-title"></div>
+
+                        <!--Add Product Type Details -->
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>ProductType Name</label>
+                                        <input asp-for="ProductTypeName" class="form-control s-12" type="text" id="ProductTypeName" name="ProductTypeName">
+
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Punch Line</label>
+                                        <input asp-for="PunchLine" class="form-control s-12" type="text" id="PunchLine" name="PunchLine">
+
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Description</label>
+                                        <textarea asp-for="Description" class="form-control s-12" id="Description" name="Description"></textarea>
+
+                                    </div>
+                                    <div class="form-group">
+                                        <label>ProductType Image</label>
+                                        <input asp-for="ProductTypeImage" class="form-control s-12" type="file" id="ProductTypeImage" name="ProductTypeImage">
+
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Status</label>
+                                        <select asp-for="Status" class="form-control s-12" name="Status" id="Status">
+                                            <option value="Active">Active</option>
+                                            <option value="Inactive">Inactive</option>
+                                        </select>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</form>

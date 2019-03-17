@@ -1,0 +1,129 @@
+﻿@model RestaurantDashboard.Models.Gallery.GalleryModel
+@{
+    ViewData["Title"] = "EditGallery";
+    Layout = "~/Views/Shared/_Main_Layout.cshtml";
+}
+
+@{if (TempData["title"] != null)
+    {
+
+
+        <div class="toast"
+             data-title=@TempData["title"].ToString()
+             data-message='@TempData["message"].ToString()'
+             data-type=@TempData["type"]>
+        </div>
+
+
+    }
+
+    TempData["title"] = null;
+    TempData["message"] = null;
+    TempData["type"] = null;
+}
+
+
+<div class="row">
+
+    <div class="col-md-12">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="~/Dashboard/Index">Dashboard</a>
+            </li>
+            <li class="breadcrumb-item active"><a href="~/Gallery/GalleryList">Gallery List</a></li>
+            <li class="breadcrumb-item active">Edit Gallery</li>
+
+        </ol>
+    </div>
+
+</div>
+
+@*<form asp-action="EditProductType" ,new { enctype="multipart/form-data" })>*@
+
+<input asp-for="Id" type="hidden" />
+<form asp-controller="Gallery" asp-action="EditGallery" method="post" ,new { enctype="multipart/form-data" }>
+
+
+    @if (ViewData.ModelState.Any(x => x.Value.Errors.Any()))
+    {
+        // Bootstrap 2 = "alert-error", Bootstrap 3 and 4 = "alert-danger"
+        <div asp-validation-summary="All" class="alert alert-danger alert-error">
+            <a class="close" data-dismiss="alert">&times;</a>
+        </div>
+    }
+
+
+    <div class="container-fluid my-3">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row div_right">
+                        <button type="submit" name="save" class="btn btn-primary btn-sm pull-right">
+                            <i class="icon-save mr-2"></i>
+                            Save
+                        </button>
+                        <button type="submit" name="save-continue" class="btn btn-primary btn-sm pull-right ml-2 margin-right5">
+                            <i class="icon-save mr-2"></i>
+                            Save And Countinue
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-1">
+            <div class="col-md-12">
+                <div class="card bg-white mb-3 font-weight-bold">
+                    <div class="card-header text-primary">Edit Gallery</div>
+                    <div class="card-body">
+                        <div class="card-title"></div>
+
+                        <!--Add Product Type Details -->
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Gallery Image</label><br />
+                                        @if (Model.GalleryImage != null)
+                                        {
+                                            var base64 = Convert.ToBase64String(Model.GalleryImage);
+                                            var imgsrc = string.Format("data:image/jpg;base64,{0}", base64);
+                                            <img src='@imgsrc' style="max-width:100px;max-height:100px" />
+                                        }
+                                        else
+                                        { <img src="" style="max-width:100px;max-height:100px" />}
+                                    </div>
+
+                                        <div class="form-group">
+                                            <label>Select Image</label>
+                                            <input asp-for="GalleryImage" class="form-control s-12" type="file" id="GalleryImage" name="GalleryImage">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Gallery Name</label>
+                                            <input asp-for="AltText" class="form-control s-12" type="text" id="AltText" name="AltText">
+
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>Status</label>
+                                            <select asp-for="Status" class="form-control s-12" name="Status" id="Status">
+                                                <option value="Active">Active</option>
+                                                <option value="Inactive">Inactive</option>
+                                            </select>
+
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</form>
+

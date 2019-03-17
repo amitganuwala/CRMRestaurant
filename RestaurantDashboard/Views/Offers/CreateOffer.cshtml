@@ -1,0 +1,158 @@
+﻿
+@{
+    ViewData["Title"] = "CreateOffer";
+    Layout = "~/Views/Shared/_Main_Layout.cshtml";
+}
+
+<div class="row">
+
+    <div class="col-md-12">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="~/Dashboard/Index">Dashboard</a>
+            </li>
+            <li class="breadcrumb-item active"><a href="~/Offers/ListOffer">Offer List</a></li>
+            <li class="breadcrumb-item active">Add Offer</li>
+
+        </ol>
+    </div>
+
+</div>
+
+<form asp-action="CreateOffer">
+
+    @if (ViewData.ModelState.Any(x => x.Value.Errors.Any()))
+    {
+        // Bootstrap 2 = "alert-error", Bootstrap 3 and 4 = "alert-danger"
+        <div asp-validation-summary="All" class="alert alert-danger alert-error">
+            <a class="close" data-dismiss="alert">&times;</a>
+        </div>
+    }
+
+
+    <div class="container-fluid my-3">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row div_right">
+                        <button type="submit" name="save" class="btn btn-primary btn-sm pull-right">
+                            <i class="icon-save mr-2"></i>
+                            Save
+                        </button>
+                        <button type="submit" name="save-continue" class="btn btn-primary btn-sm pull-right ml-2 margin-right5">
+                            <i class="icon-save mr-2"></i>
+                            Save And Countinue
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-1">
+            <div class="col-md-12">
+                <div class="card bg-white mb-3 font-weight-bold">
+                    <div class="card-header text-primary">Add Offer</div>
+                    <div class="card-body">
+                        <div class="card-title"></div>
+
+                        <!--Add Product Offer Details -->
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Offer Name</label>
+                                            <input class="form-control s-12" type="text" id="OfferName" name="OfferName" value="">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>Offer Cost</label>
+                                            <input class="form-control s-12" type="text" id="OfferCost" name="OfferCost" value="">
+
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Offer Start Date</label>
+                                            <div class="input-group">
+                                                <input type="text" name="OfferStartDate" id="OfferStartDate" class="date-time-picker form-control s-12"
+                                                       data-options='{"timepicker":false, "format":"d M Y"}' autocomplete="off">
+                                            </div>
+
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Offer Valid Date</label>
+                                            <div class="input-group">
+                                                <input type="text" name="OfferValidDate" id="OfferValidDate" class="date-time-picker form-control s-12"
+                                                       data-options='{"timepicker":false, "format":"d M Y"}' autocomplete="off">
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Serve No Of People</label>
+                                            <input name="ServeNoOfPeople" id="ServeNoOfPeople" class="form-control s-12">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>Offer Image</label>
+                                            <input type="file" name="OfferImage" id="OfferImage" class="form-control s-12" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Offer Condition</label>
+                                            <textarea name="OfferCondition" id="OfferCondition" class="form-control s-12"></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Status</label>
+                                            <select class="form-control s-12" name="Status" id="Status">
+                                                <option value="Active">Active</option>
+                                                <option value="Inactive">Inactive</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br />
+                                <!--Offer List Table -->
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="card no-b">
+                                            <div class="card-body">
+                                                <div class="card-title ">Offer Product Detail List</div>
+                                                <div class="collapse show" id="OfferDetails">
+                                                    <div class="card-body p-0">
+                                                        <table id="tblListFieldData" class="table table-light table-bordered table-hover ">
+                                                            <thead class="bg-light text-black">
+                                                                <tr>
+                                                                    <th width="40%">ProductType Name</th>
+                                                                    <th width="40%">Product Name</th>
+                                                                    <th width="10%">Quantity</th>
+                                                                    <th width="10%"></th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody id="divListFieldRows"></tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <button id="btnAddProductRow" class="btn btn-sm btn-primary" type="button" name="btnAddProductRow">Add Product</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Offer List Table -->
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</form>
+
+

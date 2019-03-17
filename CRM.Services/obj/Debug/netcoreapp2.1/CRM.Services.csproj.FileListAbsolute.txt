@@ -1,0 +1,42 @@
+E:\Skyvision Project\DotNet Core Dashboard\DashboardRestorant\CRM.Services\bin\Debug\netcoreapp2.1\CRM.Services.deps.json
+E:\Skyvision Project\DotNet Core Dashboard\DashboardRestorant\CRM.Services\bin\Debug\netcoreapp2.1\CRM.Services.dll
+E:\Skyvision Project\DotNet Core Dashboard\DashboardRestorant\CRM.Services\bin\Debug\netcoreapp2.1\CRM.Services.pdb
+E:\Skyvision Project\DotNet Core Dashboard\DashboardRestorant\CRM.Services\bin\Debug\netcoreapp2.1\CRM.Core.dll
+E:\Skyvision Project\DotNet Core Dashboard\DashboardRestorant\CRM.Services\bin\Debug\netcoreapp2.1\CRM.Data.dll
+E:\Skyvision Project\DotNet Core Dashboard\DashboardRestorant\CRM.Services\bin\Debug\netcoreapp2.1\CRM.Core.pdb
+E:\Skyvision Project\DotNet Core Dashboard\DashboardRestorant\CRM.Services\bin\Debug\netcoreapp2.1\CRM.Data.pdb
+E:\Skyvision Project\DotNet Core Dashboard\DashboardRestorant\CRM.Services\obj\Debug\netcoreapp2.1\CRM.Services.csprojAssemblyReference.cache
+E:\Skyvision Project\DotNet Core Dashboard\DashboardRestorant\CRM.Services\obj\Debug\netcoreapp2.1\CRM.Services.csproj.CoreCompileInputs.cache
+E:\Skyvision Project\DotNet Core Dashboard\DashboardRestorant\CRM.Services\obj\Debug\netcoreapp2.1\CRM.Services.AssemblyInfoInputs.cache
+E:\Skyvision Project\DotNet Core Dashboard\DashboardRestorant\CRM.Services\obj\Debug\netcoreapp2.1\CRM.Services.AssemblyInfo.cs
+E:\Skyvision Project\DotNet Core Dashboard\DashboardRestorant\CRM.Services\obj\Debug\netcoreapp2.1\CRM.Services.csproj.CopyComplete
+E:\Skyvision Project\DotNet Core Dashboard\DashboardRestorant\CRM.Services\obj\Debug\netcoreapp2.1\CRM.Services.dll
+E:\Skyvision Project\DotNet Core Dashboard\DashboardRestorant\CRM.Services\obj\Debug\netcoreapp2.1\CRM.Services.pdb
+F:\Skyvision Project\DotNet Core Dashboard\DashboardRestorant\CRM.Services\bin\Debug\netcoreapp2.1\CRM.Services.deps.json
+F:\Skyvision Project\DotNet Core Dashboard\DashboardRestorant\CRM.Services\bin\Debug\netcoreapp2.1\CRM.Services.dll
+F:\Skyvision Project\DotNet Core Dashboard\DashboardRestorant\CRM.Services\bin\Debug\netcoreapp2.1\CRM.Services.pdb
+F:\Skyvision Project\DotNet Core Dashboard\DashboardRestorant\CRM.Services\bin\Debug\netcoreapp2.1\CRM.Core.dll
+F:\Skyvision Project\DotNet Core Dashboard\DashboardRestorant\CRM.Services\bin\Debug\netcoreapp2.1\CRM.Data.dll
+F:\Skyvision Project\DotNet Core Dashboard\DashboardRestorant\CRM.Services\bin\Debug\netcoreapp2.1\CRM.Core.pdb
+F:\Skyvision Project\DotNet Core Dashboard\DashboardRestorant\CRM.Services\bin\Debug\netcoreapp2.1\CRM.Data.pdb
+F:\Skyvision Project\DotNet Core Dashboard\DashboardRestorant\CRM.Services\obj\Debug\netcoreapp2.1\CRM.Services.csprojAssemblyReference.cache
+F:\Skyvision Project\DotNet Core Dashboard\DashboardRestorant\CRM.Services\obj\Debug\netcoreapp2.1\CRM.Services.csproj.CoreCompileInputs.cache
+F:\Skyvision Project\DotNet Core Dashboard\DashboardRestorant\CRM.Services\obj\Debug\netcoreapp2.1\CRM.Services.AssemblyInfoInputs.cache
+F:\Skyvision Project\DotNet Core Dashboard\DashboardRestorant\CRM.Services\obj\Debug\netcoreapp2.1\CRM.Services.AssemblyInfo.cs
+F:\Skyvision Project\DotNet Core Dashboard\DashboardRestorant\CRM.Services\obj\Debug\netcoreapp2.1\CRM.Services.csproj.CopyComplete
+F:\Skyvision Project\DotNet Core Dashboard\DashboardRestorant\CRM.Services\obj\Debug\netcoreapp2.1\CRM.Services.dll
+F:\Skyvision Project\DotNet Core Dashboard\DashboardRestorant\CRM.Services\obj\Debug\netcoreapp2.1\CRM.Services.pdb
+D:\CRM\DashboardRestorant\CRM.Services\bin\Debug\netcoreapp2.1\CRM.Services.deps.json
+D:\CRM\DashboardRestorant\CRM.Services\bin\Debug\netcoreapp2.1\CRM.Services.dll
+D:\CRM\DashboardRestorant\CRM.Services\bin\Debug\netcoreapp2.1\CRM.Services.pdb
+D:\CRM\DashboardRestorant\CRM.Services\bin\Debug\netcoreapp2.1\CRM.Core.dll
+D:\CRM\DashboardRestorant\CRM.Services\bin\Debug\netcoreapp2.1\CRM.Data.dll
+D:\CRM\DashboardRestorant\CRM.Services\bin\Debug\netcoreapp2.1\CRM.Core.pdb
+D:\CRM\DashboardRestorant\CRM.Services\bin\Debug\netcoreapp2.1\CRM.Data.pdb
+D:\CRM\DashboardRestorant\CRM.Services\obj\Debug\netcoreapp2.1\CRM.Services.csprojAssemblyReference.cache
+D:\CRM\DashboardRestorant\CRM.Services\obj\Debug\netcoreapp2.1\CRM.Services.csproj.CoreCompileInputs.cache
+D:\CRM\DashboardRestorant\CRM.Services\obj\Debug\netcoreapp2.1\CRM.Services.AssemblyInfoInputs.cache
+D:\CRM\DashboardRestorant\CRM.Services\obj\Debug\netcoreapp2.1\CRM.Services.AssemblyInfo.cs
+D:\CRM\DashboardRestorant\CRM.Services\obj\Debug\netcoreapp2.1\CRM.Services.csproj.CopyComplete
+D:\CRM\DashboardRestorant\CRM.Services\obj\Debug\netcoreapp2.1\CRM.Services.dll
+D:\CRM\DashboardRestorant\CRM.Services\obj\Debug\netcoreapp2.1\CRM.Services.pdb

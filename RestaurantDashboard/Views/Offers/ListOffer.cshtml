@@ -1,0 +1,118 @@
+﻿
+@{
+    ViewData["Title"] = "ListOffer";
+    Layout = "~/Views/Shared/_Main_Layout.cshtml";
+}
+
+<div class="row">
+
+    <div class="col-md-12">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="~/Home/Index">Dashboard</a>
+            </li>
+            <li class="breadcrumb-item active">Offer List</li>
+
+        </ol>
+    </div>
+
+</div>
+<form action="List" method="post">
+    <div class="col-md-12">
+        <div class="card bg-white mb-3 font-weight-bold">
+            @*<a data-toggle="collapse" href="#collapseOne" class="" aria-expanded="true">
+                    <div class="card-header" data-widget="collapse">Advance Search <i class="s-14 icon-angle-double-down text-blue font-weight-bold"></i> </div>
+                </a>*@
+            <div id="collapseOne" class="panel-collapse collapse in" aria-expanded="true" style="">
+                <div class="card-body">
+                    <div class="card-title"></div>
+                    <div class="row">
+                        <div class="col-md-4 text-right">
+                            <label>Name</label>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="input-group">
+                                <input placeholder="Customer Name" class="form-control r-0 light s-12 " type="text">
+                            </div>
+                        </div>
+
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-6"></div>
+                        <div class="col-md-5 col-md-offset-5">
+                            <button type="submit" id="search-customer" class="btn-fab shadow btn-primary icon-search"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+<div class="container-fluid my-3">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card no-b">
+                <div class="card-body">
+
+
+                    <table class="table table-light table-bordered table-hover data-tables "
+                           data-options='{"searching":false}'>
+                        <thead class="bg-light text-black">
+                            <tr>
+                                <th width="20%">Offer Name</th>
+                                <th width="10%">Offer Cost</th>
+                                <th width="15%">Offer Start Date</th>
+                                <th width="15%">Offer Valid Date</th>
+                                <th width="10%">No Of Items</th>
+                                <th width="10%">Serve No Of People</th>
+                                <th width="10%" class="sorting_asc_disabled sorting_desc_disabled">Status</th>
+                                <th width="10%" class="sorting_asc_disabled sorting_desc_disabled">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @*@foreach (var customer in Model.ListCustomerModel)
+                                {
+                                    <tr>
+                                        <td>
+                                            <label>@customer.CustomerName</label>
+                                        </td>
+                                        <td>
+                                            <label>@customer.Email</label>
+                                        </td>
+
+                                        <td>
+                                            @if (customer.Status == true)
+                                            {
+                                                <span class="badge badge-success r-5">Active</span>
+
+                                            }
+                                            @if (customer.Status == false)
+                                            {
+
+                                                <span class="badge badge-warning r-5">Inactive</span>
+                                            }
+                                        </td>
+                                        <td>
+
+                                            <a href="~/Customer/EditCustomer/@customer.Id"><i class="icon-edit lblue-text"></i></a>
+
+                                        </td>
+                                    </tr>
+                                }*@
+                        </tbody>
+
+                    </table>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<a asp-action="CreateProductType" class="btn-fab btn-fab-md fab-right fab-right-bottom-fixed shadow btn-primary"><i class="icon-add"></i></a>
+<script>
+    //onload start
+
+    $(".alert").fadeOut(5000);//fade out error messages</script>
+
