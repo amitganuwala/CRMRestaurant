@@ -13,6 +13,7 @@ using ApiForRestaurentDashboard.Models.Registration;
 
 namespace ApiForRestaurentDashboard.Controllers
 {
+    [Produces("application/json")]
     [Route("api/[controller]")]
     [ApiController]
     public class RegistrationsController : ControllerBase
@@ -32,6 +33,7 @@ namespace ApiForRestaurentDashboard.Controllers
         }
 
         #endregion
+
 
         #region methods
 
@@ -120,47 +122,6 @@ namespace ApiForRestaurentDashboard.Controllers
         }
 
 
-        //[HttpPost]
-        //[Route("AddNewRegistrations")]
-        //public IActionResult AddNewRegistrations(RegistrationModel model)
-        //{
-        //    ResultModel resultModel = new ResultModel();
-
-        //    try
-        //    {
-
-        //        Registration registration =null;
-        //        registration = new Registration {
-
-        //            CustFirstName=model.CustFirstName,
-        //            CustLastName = model.CustLastName,
-        //            EatingPreferance = model.EatingPreferance,
-        //            Email = model.Email,
-        //            Password = model.Password,
-        //            PhoneNo = model.PhoneNo,
-        //            RAmount = model.RAmount,
-        //            ReferCode= GenerateRandomChar() + GenerateRandomNo(),
-        //            Gender=model.Gender
-        //    };
-
-
-        //        _registrationServices.InsertRegistration(registration);
-
-        //        resultModel.Message = ValidationMessages.Success;
-        //        resultModel.Status = 1;
-        //        resultModel.Response = registration;
-
-
-        //    }catch(Exception exp)
-        //    {
-        //        resultModel.Message = exp.ToString();
-        //        resultModel.Status = 0;
-        //        resultModel.Response = null;
-
-        //    }
-
-        //    return Ok(resultModel);
-        //}
 
 
         [HttpPost]

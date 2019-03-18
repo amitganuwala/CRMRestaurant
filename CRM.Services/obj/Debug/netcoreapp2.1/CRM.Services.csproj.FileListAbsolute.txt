@@ -40,3 +40,17 @@ D:\CRM\DashboardRestorant\CRM.Services\obj\Debug\netcoreapp2.1\CRM.Services.Asse
 D:\CRM\DashboardRestorant\CRM.Services\obj\Debug\netcoreapp2.1\CRM.Services.csproj.CopyComplete
 D:\CRM\DashboardRestorant\CRM.Services\obj\Debug\netcoreapp2.1\CRM.Services.dll
 D:\CRM\DashboardRestorant\CRM.Services\obj\Debug\netcoreapp2.1\CRM.Services.pdb
+D:\CRM\CRMRestaurantGitHub\CRM.Services\bin\Debug\netcoreapp2.1\CRM.Services.deps.json
+D:\CRM\CRMRestaurantGitHub\CRM.Services\bin\Debug\netcoreapp2.1\CRM.Services.dll
+D:\CRM\CRMRestaurantGitHub\CRM.Services\bin\Debug\netcoreapp2.1\CRM.Services.pdb
+D:\CRM\CRMRestaurantGitHub\CRM.Services\bin\Debug\netcoreapp2.1\CRM.Core.dll
+D:\CRM\CRMRestaurantGitHub\CRM.Services\bin\Debug\netcoreapp2.1\CRM.Data.dll
+D:\CRM\CRMRestaurantGitHub\CRM.Services\bin\Debug\netcoreapp2.1\CRM.Core.pdb
+D:\CRM\CRMRestaurantGitHub\CRM.Services\bin\Debug\netcoreapp2.1\CRM.Data.pdb
+D:\CRM\CRMRestaurantGitHub\CRM.Services\obj\Debug\netcoreapp2.1\CRM.Services.csprojAssemblyReference.cache
+D:\CRM\CRMRestaurantGitHub\CRM.Services\obj\Debug\netcoreapp2.1\CRM.Services.csproj.CoreCompileInputs.cache
+D:\CRM\CRMRestaurantGitHub\CRM.Services\obj\Debug\netcoreapp2.1\CRM.Services.AssemblyInfoInputs.cache
+D:\CRM\CRMRestaurantGitHub\CRM.Services\obj\Debug\netcoreapp2.1\CRM.Services.AssemblyInfo.cs
+D:\CRM\CRMRestaurantGitHub\CRM.Services\obj\Debug\netcoreapp2.1\CRM.Services.csproj.CopyComplete
+D:\CRM\CRMRestaurantGitHub\CRM.Services\obj\Debug\netcoreapp2.1\CRM.Services.dll
+D:\CRM\CRMRestaurantGitHub\CRM.Services\obj\Debug\netcoreapp2.1\CRM.Services.pdb
